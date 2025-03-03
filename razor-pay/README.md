@@ -16,20 +16,6 @@ You can preview the live version of this project using:
 - **HTML**
 - **Tailwind CSS**
 
-## Installation and Setup
-To run this project on your local machine, follow these steps:
-
-1. **Clone the Repository**
-   ```sh
-   git clone https://github.com/your-username/razorpay-clone.git
-   ```
-2. **Navigate to Project Folder**
-   ```sh
-   cd razorpay-clone
-   ```
-3. **Open in Browser**
-   Simply open the `index.html` file in your browser.
-
 ## Screenshots
 Here are some screenshots of the Razorpay landing page clone:
 
@@ -42,13 +28,9 @@ Here are some screenshots of the Razorpay landing page clone:
 ### CORE FEATURES
 ![core features](./screen_shot/03.png)
 
-
-## Contributing
-If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
-
 ## License
 This project is for educational purposes and is not affiliated with Razorpay.
 
 ## Contact
-For any queries, feel free to contact me at [your email] or connect with me on GitHub @sourav4152.
+For any queries, feel free to contact me at guptasourav595@gmail.com or connect with me on GitHub @sourav4152.
 
