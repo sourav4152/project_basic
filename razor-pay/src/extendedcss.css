@@ -1,0 +1,32 @@
+
+.featuresWave{
+    opacity: 0;
+    transition: all linear 200ms ;
+
+}
+.featuresWavediv:hover .featuresWave{
+    opacity: 1;
+
+}
+.featuresWavediv:hover{
+    filter: drop-shadow(0 0 10px #eeeeee);
+    scale: 103%;
+}
+
+
+
+.featuresWave2{
+    opacity: 0;
+    transition: all linear 200ms ;
+
+}
+.featuresWavediv2:hover{
+    filter: drop-shadow(0 0 10px #05073b8b);
+    scale: 103%;
+}
+
+.featuresWavediv2:hover .featuresWave2{
+    opacity: 1;
+
+
+}
