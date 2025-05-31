@@ -1,0 +1,232 @@
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --accent-color: #4caf50;
+  --input-bg: #333;
+  --strength-very-weak: #ff1a1a;
+  --strength-weak: #ff944d;
+  --strength-medium: #ffeb3b;
+  --strength-strong: #00e676;
+  --strength-very-strong: #2bff00;
+}
+
+
+
+
+body.light {
+  --bg-color: #f9f9f9;
+  --text-color: #1a1a1a;
+  --accent-color: #673ab7;
+  --input-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background: var(--input-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.display-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.display {
+  flex: 1;
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+}
+
+[data-copy] {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+
+[data-copy] {
+  position: relative;
+  cursor: pointer;
+}
+
+
+[data-copyMsg] {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 2px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  user-select: none;
+  z-index: 10;
+}
+
+
+[data-copyMsg].active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.length-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.strength-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.length-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.strength-indicator-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.strength-indicator {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: background-color 0.3s ease;
+}
+
+.strength-label {
+  font-weight: bold;
+  color: var(--text-color, #fff);
+}
+
+
+[data-indicator] {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 5px gray;
+}
+
+[data-indicator].level-1 {
+  background-color: red;
+  box-shadow: 0 0 8px red;
+}
+[data-indicator].level-2 {
+  background-color: orange;
+  box-shadow: 0 0 8px orange;
+}
+[data-indicator].level-3 {
+  background-color: yellow;
+  box-shadow: 0 0 8px yellow;
+}
+[data-indicator].level-4 {
+  background-color: #7fffd4;
+  box-shadow: 0 0 8px #7fffd4;
+}
+[data-indicator].level-5 {
+  background-color: #00ff00;
+  box-shadow: 0 0 8px #00ff00;
+}
+
+
+
+.generateButton {
+  padding: 10px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.generateButton:hover {
+  background-color: #388e3c;
+}
+
+/* Toggle Mode Button */
+.toggle-mode {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.toggle-mode button {
+  padding: 8px 16px;
+  border: none;
+  background: var(--accent-color);
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+/* Strength Color Classes */
+.strength-1 {
+  background-color: var(--strength-very-weak);
+}
+.strength-2 {
+  background-color: var(--strength-weak);
+}
+.strength-3 {
+  background-color: var(--strength-medium);
+}
+.strength-4 {
+  background-color: var(--strength-strong);
+}
+.strength-5 {
+  background-color: var(--strength-very-strong);
+}

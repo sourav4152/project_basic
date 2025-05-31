@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href=".//imagges/icon_favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+
+            <button data-copy>
+                <span data-copyMsg></span>
+                <img src="./imagges/icons8-copy-48.png" alt="Copy" width="23px" height="23px">
+            </button>
+
+        </div>
+
+        <div class="input-container">
+
+            <div class="length-container">
+                <div class="length-label">
+                    <p>Password Length</p>
+                    <p data-lengthNumber>10</p>
+                </div>
+
+                <input type="range" min="1" max="20" step="1" class="slider" data-lengthSlider>
+
+                <!-- Checkboxes -->
+                <div>
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Include Uppercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">Include Symbols</label>
+                </div>
+
+                <!-- Strength Section -->
+                <div class="strength-container">
+                    <p>Strength</p>
+                    <div class="strength-indicator-group">
+                        <div data-indicator class="strength-indicator"></div>
+                        <span id="strength-label" class="strength-label">-</span>
+                    </div>
+                </div>
+
+                <!-- Generate Password -->
+                <button class="generateButton">Generate Password</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Dark/Light Mode Toggle -->
+    <div class="toggle-mode">
+        <button id="modeToggle">Toggle Dark/Light Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
