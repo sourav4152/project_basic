@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-10">
+        <div class="text-[#0398d4] font-medium text-[20px]">Increnment And Decrenment</div>
+
+        <div class="flex flex-row bg-white text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5 ">
+            <!-- negative button  -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5 cursor-pointer">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <div class="font-bold" id="counter">
+                0
+            </div>
+
+            <!-- possitive button  -->
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5 cursor-pointer">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
